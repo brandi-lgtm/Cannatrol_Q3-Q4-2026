@@ -35,62 +35,40 @@
     letter-spacing: 2px; text-transform: uppercase; margin: 0 0 6px;
   }
   h1 { font-family: Georgia, "Times New Roman", serif; font-weight: bold; font-size: 30px; color: var(--navy); margin: 0 0 14px; }
-  h2 { font-family: Georgia, serif; font-weight: bold; font-size: 24px; color: var(--navy); margin: 26px 0 10px; }
+  h2 { font-family: Georgia, serif; font-weight: bold; font-size: 22px; color: var(--navy); margin: 22px 0 10px; }
   p.lead { font-size: 16.5px; margin: 0 0 20px; }
   p.body-text { font-size: 16px; margin: 0 0 16px; }
 
   .rule { border: none; border-bottom: 1px solid var(--hairline); margin: 22px 0; }
 
-  .hero-stats { display: flex; gap: 30px; margin: 24px 0 30px; }
-  .stat { flex: 1; border-top: 4px solid; padding-top: 12px; }
-  .stat .num { font-family: Georgia, serif; font-weight: bold; font-style: italic; font-size: 34px; margin-bottom: 6px; }
-  .stat .label { font-size: 13.5px; color: var(--slate); }
-
-  .meter { margin: 18px 0 26px; }
-  .meter .row-label { font-family: Consolas, monospace; font-weight: bold; font-size: 12.5px; letter-spacing: 1.5px; text-transform: uppercase; }
-  .meter .row-sub { font-style: italic; color: var(--slate); font-size: 14px; margin-left: 8px; }
-  .track { display: flex; height: 22px; background: #EEF0F2; margin: 8px 0 8px; overflow: hidden; }
-  .fill { height: 100%; }
-  .meter .note { font-size: 14.5px; color: var(--slate); }
-
-  .timeline { display: flex; border-top: 1px solid var(--hairline); margin: 26px 0 20px; }
-  .timeline .node { flex: 1; text-align: center; padding: 16px 6px; border-top: 4px solid var(--teal); font-family: Consolas, monospace; font-weight: bold; font-size: 13.5px; letter-spacing: 1px; }
+  .timeline { display: flex; border-top: 1px solid var(--hairline); margin: 18px 0 20px; }
+  .timeline .node { flex: 1; text-align: center; padding: 14px 6px; border-top: 4px solid var(--teal); font-family: Consolas, monospace; font-weight: bold; font-size: 13.5px; letter-spacing: 1px; }
   .timeline .node .dot { color: var(--teal); font-size: 18px; margin-right: 6px; }
   .timeline .node.end { background: var(--navy); color: #fff; border-top-color: var(--navy); flex: 1.3; }
 
-  .callout { display: flex; margin: 20px 0 30px; }
-  .callout .tag { background: var(--violet); color: #fff; padding: 16px; width: 220px; flex-shrink: 0; }
-  .callout .tag .t1 { font-family: Consolas, monospace; font-weight: bold; font-size: 12.5px; letter-spacing: 1.5px; }
-  .callout .tag .t2 { font-style: italic; font-size: 13px; margin-top: 6px; color: #EDE7F6; }
-  .callout .desc { background: var(--paper); flex: 1; padding: 16px; font-size: 15px; }
-  .callout .cost { background: var(--paper); padding: 16px; display: flex; align-items: center; font-family: Consolas, monospace; font-weight: bold; font-size: 17px; color: var(--violet); border-left: 1px solid #fff; }
-
-  table { width: 100%; border-collapse: collapse; margin: 14px 0 28px; font-size: 15px; }
+  table { width: 100%; border-collapse: collapse; margin: 14px 0 22px; font-size: 15px; }
   th { background: var(--ink); color: #fff; text-align: left; padding: 10px 14px; font-family: Consolas, monospace; font-size: 12.5px; letter-spacing: 1px; text-transform: uppercase; }
-  .budget-table th { background: var(--navy); }
   td { padding: 12px 14px; border-bottom: 1px solid var(--hairline); vertical-align: top; }
   tr:nth-child(even) td { background: var(--paper); }
   .rail { width: 6px; padding: 0; }
-  td.month { font-family: Consolas, monospace; font-weight: bold; font-size: 14px; white-space: nowrap; }
-  td.element { font-weight: bold; }
-  td.does { color: var(--slate); }
+  td.service { font-weight: bold; }
+  td.purpose { color: var(--slate); }
+  td.timing { font-style: italic; color: var(--slate); font-size: 14px; white-space: nowrap; }
   .amount { text-align: right; font-family: Consolas, monospace; font-weight: bold; }
-  .timing { font-style: italic; color: var(--slate); font-size: 14px; }
   tr.total td { background: var(--ink); color: #fff; font-weight: bold; font-family: Consolas, monospace; letter-spacing: 1px; border-bottom: none; }
   tr.total .amount { color: var(--teal); font-size: 17px; }
-  tr.grandtotal td { background: var(--navy); color: #fff; font-weight: bold; font-family: Consolas, monospace; letter-spacing: 1px; border-bottom: none; }
-  tr.grandtotal .amount { color: #fff; font-size: 19px; }
-  tr.leaderboard-row td { background: var(--paper); }
-  tr.leaderboard-row .amount { color: var(--violet); }
 
-  footer { margin-top: 30px; padding-top: 16px; border-top: 1px solid var(--hairline); font-size: 14px; color: var(--slate); font-style: italic; }
-  footer .next-step { font-style: normal; margin-top: 6px; }
+  .ai-note { background: var(--navy); color: #fff; padding: 16px 20px; font-size: 15px; margin: 18px 0 0; }
+  .ai-note b { font-weight: bold; }
+
+  .small-note { font-size: 13px; font-style: italic; color: var(--slate); margin: 16px 0 0; }
+  .small-note b { font-style: italic; }
+
+  footer { margin-top: 26px; padding-top: 14px; border-top: 1px solid var(--hairline); font-size: 14px; color: var(--slate); font-style: italic; }
 
   @media (max-width: 700px) {
-    .hero-stats { flex-direction: column; gap: 18px; }
     .timeline { flex-wrap: wrap; }
-    .callout { flex-direction: column; }
-    .callout .tag { width: auto; }
+    table { font-size: 13.5px; }
   }
 </style>
 </head>
@@ -108,48 +86,12 @@
 
   <p class="eyebrow" style="color:var(--navy); margin-top:24px;">Campaign Proposal &middot; August&ndash;November</p>
   <h1>The Post-Harvest Authority Campaign</h1>
-  <p class="lead">A native lead-gen, branded content and e-newsletter program that closes the gap between Cannatrol&rsquo;s strong home-grow awareness and its underdeveloped commercial authority, timed to build momentum straight through to MJBizCon.</p>
+  <p class="lead">A press, branded content and e-newsletter program built to grow Cannatrol&rsquo;s brand awareness among commercial cultivators, dispensaries and executives, timed to build momentum straight through to MJBizCon.</p>
 
-  <div class="hero-stats">
-    <div class="stat" style="border-color:var(--teal);">
-      <div class="num" style="color:var(--teal);">16%</div>
-      <div class="label">More terpene retention, independently tested by the Cannabis Research Coalition</div>
-    </div>
-    <div class="stat" style="border-color:var(--violet);">
-      <div class="num" style="color:var(--violet);">1</div>
-      <div class="label">Commercial case study ready to amplify: Hudson Growers Alliance</div>
-    </div>
-    <div class="stat" style="border-color:var(--navy);">
-      <div class="num" style="color:var(--navy);">$8,238</div>
-      <div class="label">Total investment across the B2B program and the August B2C leaderboard</div>
-    </div>
-  </div>
+  <p class="eyebrow" style="color:var(--teal);">The Opportunity</p>
+  <p class="body-text">Cannatrol has genuine commercial proof: an independently tested 16% terpene-retention advantage, documented trichome preservation, and real customer results, starting with Hudson Growers Alliance and expanding to additional case studies and testimonials Cannatrol has on hand. This program builds sustained brand awareness among the commercial cultivators, dispensaries and executives who make purchasing decisions on exactly this kind of proof.</p>
 
-  <p class="eyebrow" style="color:var(--teal);">The Problem</p>
-  <p class="body-text">Cannatrol is really two brands sharing one name. Among home growers, it already owns the category: forums, reviews and creators refer to it by nickname, and Cool Cure is the default comparison point against new entrants like the Vivosun VCure. Among commercial cultivators, dispensaries and executives, the opportunity is different. Cannatrol has genuine proof, including an independently tested 16% terpene-retention advantage, documented trichome preservation, and a real commercial case study at Hudson Growers Alliance, ready to be amplified with the same strength as its home-grow story.</p>
-
-  <p class="eyebrow" style="color:var(--violet); margin-top:28px;">Where Each Audience Stands</p>
-
-  <div class="meter">
-    <span class="row-label" style="color:var(--teal);">B2C, HOME GROWER</span><span class="row-sub">Awareness</span>
-    <div class="track"><div class="fill" style="width:90%; background:var(--teal);"></div></div>
-    <div class="note">Community-proven, review-driven, category shorthand (&ldquo;the &rsquo;trol&rdquo;). This audience already converts on its own; it just needs a periodic push, like the August promotion.</div>
-  </div>
-
-  <div class="meter">
-    <span class="row-label" style="color:var(--violet);">B2B, OPERATOR &amp; DISPENSARY</span><span class="row-sub">Awareness</span>
-    <div class="track"><div class="fill" style="width:35%; background:var(--violet);"></div></div>
-    <div class="note">Real case studies and independent lab data already exist. This program amplifies them to build the same level of recognition Cannatrol already has with home growers.</div>
-  </div>
-
-  <p class="eyebrow" style="color:var(--navy); margin-top:28px;">Our Solution</p>
-  <p class="body-text">mg Magazine is positioned to build on this exactly: a trade-media audience already made up of operators, dispensary buyers and executives, the precise readers Cannatrol&rsquo;s existing proof was built to convince. This program points the native lead-gen placement already secured under Cannatrol&rsquo;s existing contract at the Hudson case study specifically, at no additional cost, then layers three syndicated press releases, an editorially-led branded content feature and three e-newsletter placements on top, building toward MJBizCon. A separate one-month in-page leaderboard push runs alongside in August to support the B2C Cool Cure promotion, distinct from this B2B authority program.</p>
-
-  <hr class="rule">
-
-  <p class="eyebrow" style="color:var(--navy);">Campaign Runway</p>
-  <h2>August &rarr; MJBizCon</h2>
-
+  <p class="eyebrow" style="color:var(--violet); margin-top:22px;">Campaign Runway</p>
   <div class="timeline">
     <div class="node"><span class="dot">&#9679;</span>AUG</div>
     <div class="node"><span class="dot">&#9679;</span>SEP</div>
@@ -158,42 +100,22 @@
     <div class="node end">&rarr; MJBIZCON</div>
   </div>
 
-  <div class="callout">
-    <div class="tag"><div class="t1">AUGUST PROMOTION</div><div class="t2">Separate initiative, not part of the B2B program below</div></div>
-    <div class="desc">In-page leaderboard for one month only, running inside mg&rsquo;s highly engaged audience to push the Cool Cure promotional offer directly to B2C buyers.</div>
-    <div class="cost">$1,988</div>
-  </div>
-
-  <p class="eyebrow" style="color:var(--teal);">B2B Program Structure</p>
+  <p class="eyebrow" style="color:var(--navy);">Program &amp; Investment Summary</p>
   <table>
-    <tr><th style="width:6px;"></th><th style="width:12%;">Month</th><th style="width:28%;">Program Element</th><th>What It Does</th></tr>
-    <tr><td class="rail" style="background:var(--navy);"></td><td class="month" style="color:var(--navy);">AUG</td><td class="element">Press release #1 (complimentary, syndicated)</td><td class="does">Announces the Cool Cure market offer, seeding the campaign across mg&rsquo;s wire network at no media cost.</td></tr>
-    <tr><td class="rail" style="background:var(--teal);"></td><td class="month" style="color:var(--teal);">AUG&ndash;OCT</td><td class="element">Native lead-gen (already contracted)</td><td class="does">Existing contracted native placement redirected specifically to the Hudson Growers Alliance case study at no additional cost, putting Cannatrol&rsquo;s strongest B2B proof directly in front of mg&rsquo;s operator audience.</td></tr>
-    <tr><td class="rail" style="background:var(--violet);"></td><td class="month" style="color:var(--violet);">SEP</td><td class="element">Branded content feature</td><td class="does">Editorially-led sponsored feature building out the Hudson case study and independent CRC terpene data into a full commercial-proof narrative.</td></tr>
-    <tr><td class="rail" style="background:var(--teal);"></td><td class="month" style="color:var(--teal);">AUG, SEP, NOV</td><td class="element">E-newsletter promotion, 3 placements</td><td class="does">Dedicated inclusion in mg&rsquo;s newsletter at three key moments: launch, mid-campaign, and the pre-show send heading into MJBizCon.</td></tr>
-    <tr><td class="rail" style="background:var(--navy);"></td><td class="month" style="color:var(--navy);">OCT</td><td class="element">Press release #2 (complimentary, syndicated)</td><td class="does">Mid-campaign release built around the CRC independent research and case-study results, reinforcing the B2B proof story.</td></tr>
-    <tr><td class="rail" style="background:var(--navy);"></td><td class="month" style="color:var(--navy);">NOV</td><td class="element">Press release #3 (complimentary, syndicated)</td><td class="does">Pre-MJBizCon release previewing Cannatrol&rsquo;s show presence and GMP/Schedule III positioning.</td></tr>
-    <tr><td class="rail" style="background:var(--violet);"></td><td class="month" style="color:var(--violet);">NOV</td><td class="element">Executive contributed piece</td><td class="does">Fully contributed byline, AI and SEO optimized, positioning Cannatrol&rsquo;s leadership as the post-harvest authority. No media cost, built for organic search longevity.</td></tr>
+    <tr><th style="width:6px;"></th><th style="width:18%;">Service</th><th style="width:13%;">Timing</th><th>Purpose</th><th style="width:15%;">Investment</th></tr>
+    <tr><td class="rail" style="background:var(--navy);"></td><td class="service" style="color:var(--navy);">Press Releases</td><td class="timing">Aug, Oct, Nov</td><td class="purpose">Sustained press visibility across the full campaign at no media cost.</td><td class="amount" style="color:var(--navy);">Complimentary</td></tr>
+    <tr><td class="rail" style="background:var(--violet);"></td><td class="service" style="color:var(--violet);">Branded Content</td><td class="timing">September</td><td class="purpose">Brand awareness built on multiple credible, editorially-framed proof points, not a single story.</td><td class="amount">$4,900</td></tr>
+    <tr><td class="rail" style="background:var(--teal);"></td><td class="service" style="color:var(--teal);">E-Newsletter</td><td class="timing">Aug, Sep, Nov</td><td class="purpose">Direct, repeated reach to mg&rsquo;s subscriber base at the moments that matter most.</td><td class="amount">$1,350</td></tr>
+    <tr><td class="rail" style="background:var(--violet);"></td><td class="service" style="color:var(--violet);">Contributed Executive Pieces</td><td class="timing">Ongoing</td><td class="purpose">Ongoing thought-leadership presence at no media cost.</td><td class="amount" style="color:var(--navy);">Complimentary</td></tr>
+    <tr class="total"><td></td><td colspan="3">TOTAL INVESTMENT &middot; Aug&ndash;Nov</td><td class="amount">$6,250</td></tr>
   </table>
 
-  <p class="eyebrow" style="color:var(--violet);">Investment Summary</p>
-  <table class="budget-table">
-    <tr><th style="width:52%;">Line Item</th><th style="width:24%;">Timing</th><th style="width:24%;">Investment</th></tr>
-    <tr><td>Press release #1: Cool Cure promo launch</td><td class="timing">August</td><td class="amount" style="color:var(--navy);">Complimentary</td></tr>
-    <tr><td>Native lead-gen: case study distribution</td><td class="timing">Aug&ndash;Oct</td><td class="amount" style="color:var(--navy);">Already contracted</td></tr>
-    <tr><td>Branded content feature (case study amplification)</td><td class="timing">September</td><td class="amount">$4,900</td></tr>
-    <tr><td>E-newsletter promotion, 3 placements @ $450</td><td class="timing">Aug, Sep, Nov</td><td class="amount">$1,350</td></tr>
-    <tr><td>Press release #2: commercial proof / CRC data</td><td class="timing">October</td><td class="amount" style="color:var(--navy);">Complimentary</td></tr>
-    <tr><td>Press release #3: pre-MJBizCon preview</td><td class="timing">November</td><td class="amount" style="color:var(--navy);">Complimentary</td></tr>
-    <tr><td>Executive contributed piece (AI and SEO optimized)</td><td class="timing">November</td><td class="amount" style="color:var(--navy);">Complimentary</td></tr>
-    <tr class="total"><td>TOTAL CONFIRMED INVESTMENT</td><td>B2B program</td><td class="amount">$6,250</td></tr>
-    <tr class="leaderboard-row"><td>August in-page leaderboard (separate B2C initiative)</td><td class="timing">August</td><td class="amount">$1,988</td></tr>
-    <tr class="grandtotal"><td>TOTAL INVESTMENT, B2B + B2C</td><td>Aug&ndash;Nov</td><td class="amount">$8,238</td></tr>
-  </table>
+  <div class="ai-note"><b>Built for reach:</b> every piece of program content, press releases, branded features and contributed pieces, is AI and SEO optimized, and is further shared across mg&rsquo;s social media channels and included in our newsletters for increased awareness.</div>
+
+  <p class="small-note"><b>Note:</b> Native lead-gen is already contracted and currently scheduled for Q4; we&rsquo;d recommend publishing it now instead, within this campaign window. It&rsquo;s AI and SEO optimized, mg builds the landing page, and it runs on the homepage as well as in the newsletter, making it a strong placement for a case study that proves ROI.</p>
 
   <footer>
-    Confirmed B2B program spend is $6,250, covering the branded feature and three newsletter placements; three press releases, the native case-study distribution and the executive byline are delivered at no additional cost. The August in-page leaderboard ($1,988) is a separate B2C initiative, billed independently. Combined, total investment across both initiatives is $8,238.
-    <div class="next-step"><strong>Prepared by mg Magazine for Cannatrol.</strong> Next step: confirm press release #1 timing to lock the August launch.</div>
+    <strong>Prepared by mg Magazine for Cannatrol.</strong> Next step: confirm press release #1 timing to lock the August launch.
   </footer>
 
 </div>
